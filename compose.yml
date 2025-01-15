@@ -1,0 +1,8 @@
+services:
+    postgres_todos_db:
+        build:
+            dockerfile: Dockerfile
+        ports:
+            - "5432:5432"
+        volumes:
+            - ~/.docker-volumes/postgres-todos-db:/var/lib/postgresql/data
